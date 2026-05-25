@@ -1,18 +1,22 @@
 Pod::Spec.new do |s|
   s.name           = 'ReactNativeAlarm'
   s.version        = '1.0.0'
-  s.summary        = 'A sample project summary'
-  s.description    = 'A sample project description'
-  s.author         = ''
-  s.homepage       = 'https://docs.expo.dev/modules/'
+  s.summary        = 'Generic exact-alarm scheduler with any-state sound playback'
+  s.description    = 'iOS layer: UNUserNotifications scheduling + foreground AVAudioPlayer; Android layer: AlarmManager + foreground service.'
+  s.author         = 'Raselj71 <tasks@taskatask.com>'
+  s.homepage       = 'https://github.com/Raselj71/react-native-alarm'
   s.platforms      = {
-    :ios => '16.4',
-    :tvos => '16.4'
+    :ios => '16.4'
   }
   s.source         = { git: '' }
   s.static_framework = true
 
   s.dependency 'ExpoModulesCore'
+
+  # AVFoundation: AVAudioPlayer foreground playback
+  # UserNotifications: UNUserNotificationCenter scheduling + category/actions
+  # UIKit: UIApplication.shared.open for settings URLs + applicationState check
+  s.frameworks = 'AVFoundation', 'UserNotifications', 'UIKit'
 
   # Swift/Objective-C compatibility
   s.pod_target_xcconfig = {
