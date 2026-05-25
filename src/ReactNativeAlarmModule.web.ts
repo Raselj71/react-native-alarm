@@ -1,6 +1,4 @@
-import { registerWebModule, NativeModule } from 'expo';
-
-// ReactNativeAlarmModule is not available on the web platform.
-class ReactNativeAlarmModule extends NativeModule<{}> {}
-
-export default registerWebModule(ReactNativeAlarmModule, 'ReactNativeAlarmModule');
+// Web platform: no native alarm module available.
+// Exporting undefined preserves the same shape as the native file so that
+// src/index.ts can safely guard with `if (NativeAlarm)`.
+export const NativeAlarm = undefined;
