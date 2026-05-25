@@ -31,6 +31,14 @@
   "author": "Raselj71 <tasks@taskatask.com> (https://github.com/Raselj71)",
   "license": "MIT",
   "homepage": "https://github.com/Raselj71/react-native-alarm#readme",
+  "files": [
+    "build",
+    "plugin/build",
+    "app.plugin.js",
+    "android",
+    "ios",
+    "src"
+  ],
   "publishConfig": {
     "access": "public"
   },
@@ -60,6 +68,7 @@
     }
   },
   "peerDependencies": {
+    "@expo/config-plugins": ">=8.0.0",
     "expo": "*",
     "react": "*",
     "react-native": "*"
