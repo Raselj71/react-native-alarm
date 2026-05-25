@@ -62,6 +62,10 @@ internal object AlarmNotifications {
       .setAutoCancel(false)
       .setOnlyAlertOnce(true)
       .addAction(0, record.stopLabel, stopIntent)
+      // Clearing/dismissing the notification stops playback too (Android 13+
+      // lets users swipe foreground-service notifications). Reuses the Stop
+      // PendingIntent so a cleared notification delivers ACTION_STOP.
+      .setDeleteIntent(stopIntent)
       .build()
 
   /** Use the consumer app's launcher icon; fall back to a guaranteed-present icon. */

@@ -1,6 +1,6 @@
 {
   "name": "@raselj5060/react-native-alarm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generic exact-alarm scheduler with any-state sound playback",
   "main": "build/index.js",
   "types": "build/index.d.ts",
