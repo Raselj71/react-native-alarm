@@ -10,7 +10,7 @@ A generic exact-alarm scheduler for React Native / Expo with any-state sound pla
 ## Installation
 
 ```sh
-npm install @raselj71/react-native-alarm
+npm install @raselj5060/react-native-alarm
 ```
 
 This package requires [expo-modules-core](https://docs.expo.dev/modules/overview/) and must be used inside an **Expo** managed or bare workflow project.
@@ -27,7 +27,7 @@ In `app.json` (or `app.config.js`):
 {
   "expo": {
     "plugins": [
-      "@raselj71/react-native-alarm"
+      "@raselj5060/react-native-alarm"
     ]
   }
 }
@@ -93,7 +93,7 @@ import {
   openNotificationSettings,
   addAlarmEventListener,
   isAvailable,
-} from '@raselj71/react-native-alarm';
+} from '@raselj5060/react-native-alarm';
 
 // Check availability (false on web or when native module is absent)
 console.log(isAvailable());

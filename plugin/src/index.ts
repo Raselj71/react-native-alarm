@@ -1,5 +1,5 @@
 /**
- * Expo config plugin for @raselj71/react-native-alarm
+ * Expo config plugin for @raselj5060/react-native-alarm
  *
  * Injects Android manifest entries required by the alarm module:
  *   - uses-permission declarations
@@ -94,10 +94,10 @@ function ensureService(
 // ─── Plugin ───────────────────────────────────────────────────────────────────
 
 /**
- * Expo config plugin for @raselj71/react-native-alarm.
+ * Expo config plugin for @raselj5060/react-native-alarm.
  *
  * Add to your app.json / app.config.js:
- *   { "plugins": ["@raselj71/react-native-alarm"] }
+ *   { "plugins": ["@raselj5060/react-native-alarm"] }
  */
 const withReactNativeAlarm: ConfigPlugin = (config) => {
   // ── Step 1: permissions ──────────────────────────────────────────────────
