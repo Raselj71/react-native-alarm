@@ -37,7 +37,9 @@
     "app.plugin.js",
     "android",
     "ios",
-    "src"
+    "src",
+    "expo-module.config.json",
+    "README.md"
   ],
   "publishConfig": {
     "access": "public"
